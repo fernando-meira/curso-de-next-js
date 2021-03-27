@@ -1,6 +1,5 @@
 import { GetServerSideProps } from "next";
 import { Title } from "../styles/pages/Home";
-
 interface IProduct {
   id: number;
   title: string;
@@ -10,9 +9,7 @@ interface IHomeProps {
   recommendedProducts: IProduct[];
 }
 
-
 export default function Home({ recommendedProducts }: IHomeProps) {
-
   return (
     <div>
       <Title>Products</Title>
@@ -36,5 +33,4 @@ export const getServerSideProps: GetServerSideProps<IHomeProps> = async () => {
     }
   }
 }
-
 
