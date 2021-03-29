@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 
 const AddToCartModal = dinamic(
-  () => import("../../../components/AddToCartModal"),
+  () => import("@/components/AddToCartModal"),
   { loading: () => <p>Loading...</p> }
 )
 
